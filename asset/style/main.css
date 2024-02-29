@@ -1642,7 +1642,6 @@ li {
 }
 
 .swiper {
-  /*スライダーの幅と高さを調整*/
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -1653,7 +1652,6 @@ li {
 }
 
 .swiper-slide {
-  /*スライド要素の幅と高さを調整*/
   width: 31rem;
 }
 .swiper-slide .voice-content__header {

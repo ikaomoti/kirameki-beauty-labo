@@ -1542,7 +1542,6 @@ li {
 }
 
 .swiper {
-    /*スライダーの幅と高さを調整*/
     width: 100%;
 
     @include pc {
@@ -1552,7 +1551,6 @@ li {
 }
 
 .swiper-slide {
-    /*スライド要素の幅と高さを調整*/
     width: 31rem;
 
     .voice-content {
