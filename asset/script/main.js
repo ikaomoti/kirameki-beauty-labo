@@ -11,6 +11,7 @@ const swiper = new Swiper(".swiper", {
             slidesPerView: 3,
             slidesPerGroup: 1,
             spaceBetween: 15,
+            initialSlide: 1,
         },
     },
     speed: 600 

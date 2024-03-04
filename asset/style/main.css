@@ -3,16 +3,15 @@
 ------------------------------------------ */
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 /*レスポンシブ*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   html {
     font-size: 2.5641025641vw;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1028px) {
+@media screen and (min-width: 768px) and (max-width: 1028.9px) {
   html {
     font-size: 0.95vw;
   }
@@ -94,6 +93,7 @@ li {
   }
 }
 .section-title__sub .section-title__logo {
+  width: 19.7rem;
   vertical-align: -10%;
   margin-left: 0.4rem;
 }
@@ -405,7 +405,7 @@ li {
 .campaign-free {
   width: 18.8rem;
   height: 10.7rem;
-  background-color: #fdd0de;
+  background-color: #fca4bf;
   padding: 0 2.3rem 0.3rem 2.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,7 +424,6 @@ li {
   .campaign-free {
     width: 42.5rem;
     height: 22rem;
-    background-color: #fb89ab;
     padding: 0 6.6rem 1rem 6rem;
     margin-bottom: 0.2rem;
   }
@@ -513,7 +512,7 @@ li {
     font-size: 2.65rem;
   }
 }
-.cover-right__point-list {
+.cover-right__point-l {
   margin-right: 2.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,12 +524,12 @@ li {
   gap: 1.2rem;
 }
 @media screen and (min-width: 768px) {
-  .cover-right__point-list {
+  .cover-right__point-l {
     margin-right: 0;
     gap: 2.1rem;
   }
 }
-.cover-right__point-list .cover-right__point {
+.cover-right__point-li {
   width: 13.3rem;
   height: 3.5rem;
   border: solid 0.1rem #fff;
@@ -548,7 +547,7 @@ li {
   font-size: 1.8rem;
 }
 @media screen and (min-width: 768px) {
-  .cover-right__point-list .cover-right__point {
+  .cover-right__point-li {
     width: 42.7rem;
     height: 6.9rem;
     font-size: 2.8rem;
@@ -1024,7 +1023,7 @@ li {
 }
 .point-main__text {
   letter-spacing: -0.05em;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 @media screen and (min-width: 768px) {
   .point-main__text {
@@ -1697,6 +1696,10 @@ li {
 }
 .swiper-slide .voice-content__main-text .voice-content__customer-voice {
   font-size: 1.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .slide1 .voice-content__main {

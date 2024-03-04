@@ -16,18 +16,16 @@
 ------------------------------------------ */
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
-    //scroll-padding-top: 10.1rem;
 }
 
 /*レスポンシブ*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
     html {
         font-size: calc(10 / 390 * 100vw);
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1028px) {
+@media screen and (min-width: 768px) and (max-width: 1028.9px) {
     html {
         font-size: 0.95vw;
     }
@@ -107,6 +105,7 @@ li {
         }
 
         .section-title__logo {
+            width: 19.7rem;
             vertical-align: -10%;
             margin-left: .4rem;
 
@@ -381,7 +380,7 @@ li {
 .campaign-free {
     width: 18.8rem;
     height: 10.7rem;
-    background-color: #fdd0de;
+    background-color: #fca4bf;
     padding: 0 2.3rem .3rem 2.7rem;
     display: flex;
     align-items: center;
@@ -392,7 +391,6 @@ li {
     @include pc {
         width: 42.5rem;
         height: 22rem;
-        background-color: #fb89ab;
         padding: 0 6.6rem 1rem 6rem;
         margin-bottom: .2rem;
     }
@@ -477,7 +475,7 @@ li {
         }
     }
 
-    &__point-list {
+    &__point-l {
         margin-right: 2.6rem;
         display: flex;
         flex-direction: column;
@@ -488,7 +486,7 @@ li {
             gap: 2.1rem;
         }
 
-        .cover-right__point {
+        &i {
             width: 13.3rem;
             height: 3.5rem;
             border: solid .1rem #fff;
@@ -935,7 +933,7 @@ li {
 
     &__text {
         letter-spacing: -0.05em;
-        margin-bottom: 12px;
+        margin-bottom: 1.2rem;
 
         @include pc {
             font-size: 2.1rem;
@@ -1592,6 +1590,10 @@ li {
 
                 .voice-content__customer-voice {
                     font-size: 1.4rem;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
                 }
             }
         }
