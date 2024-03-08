@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @mixin sp {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.9px) {
         @content;
     }
 }
@@ -19,21 +19,27 @@ html {
 }
 
 /*レスポンシブ*/
-@media screen and (max-width: 767.9px) {
+@media screen {
     html {
         font-size: calc(10 / 390 * 100vw);
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1028.9px) {
+@media screen and (min-width: 768px) {
     html {
         font-size: 0.95vw;
     }
 }
 
-@media screen and (min-width: 1029px) and (max-width: 1440px) {
+@media screen and (min-width: 1029px) {
     html {
         font-size: calc(10 / 1440 * 100vw);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 62.5%;
     }
 }
 
@@ -391,8 +397,9 @@ li {
     @include pc {
         width: 42.5rem;
         height: 22rem;
-        padding: 0 6.6rem 1rem 6rem;
+        padding: 1.2rem 6.6rem 1rem 6rem;
         margin-bottom: .2rem;
+        transform: translateY(-0.5rem);
     }
 
     &__left {
